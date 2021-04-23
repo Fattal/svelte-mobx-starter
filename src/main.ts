@@ -1,9 +1,10 @@
 import App from './App.svelte';
+import AppVm from './store/App.store';
 
 const app = new App({
 	target: document.body,
 	props: {
-		name: 'world'
+		vm: new AppVm(),
 	}
 });
 
