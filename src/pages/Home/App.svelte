@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { connect } from 'svelte-mobx';
-	import Router from 'svelte-spa-router';
 	import { MaterialApp } from 'svelte-materialify';
-	import { routes } from './routes';
+	import Button from 'svelte-materialify/src/components/Button/Button.svelte';
 
 	export let vm;
 
@@ -22,8 +21,8 @@
 		<h1>The time is { currentTimeString }!</h1>
 		<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 		<div>This page has been open for { elapsedSecondsString }</div>
+		<Button class="red white-text">Red</Button>
 	</main>
-	<Router {routes}/>
 </MaterialApp>
 
 <style lang="scss">
